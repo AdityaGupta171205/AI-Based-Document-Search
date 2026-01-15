@@ -24,7 +24,7 @@ def main():
             page = doc.metadata.get("page", "N/A")
             source = doc.metadata.get("source", "Document")
             snippet = doc.page_content[:200].replace("\n", " ")
-            print(f"[{i}] {source}, {snippet}...\n")
+            print(f"[{i}] {source}, {snippet}...")
 
 if __name__ == "__main__":
     main()

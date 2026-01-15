@@ -1,4 +1,12 @@
 langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+langchain-groq
+langchain-huggingface
 chromadb
-pypdf
 sentence-transformers
+unstructured[pdf]
+pytesseract
+pillow
+pypdf

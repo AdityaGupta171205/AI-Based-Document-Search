@@ -6,7 +6,6 @@ langchain-groq
 langchain-huggingface
 chromadb
 sentence-transformers
-unstructured[pdf]
-pytesseract
-pillow
 pypdf
+Docx2txtLoader
+streamlit

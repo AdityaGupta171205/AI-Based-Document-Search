@@ -7,5 +7,5 @@ langchain-huggingface
 chromadb
 sentence-transformers
 pypdf
-Docx2txtLoader
+docx2txt
 streamlit

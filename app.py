@@ -5,7 +5,7 @@ from indexing import build_vectorstore
 from rag_pipeline import build_rag_chain
 from langchain_core.messages import HumanMessage, AIMessage
 
-st.set_page_config(page_title="SmartDoc RAG", page_icon="📄", layout="wide")
+st.set_page_config(page_title="SmartDoc RAG", page_icon="🌐", layout="wide")
 
 st.markdown("""
     <style>
@@ -73,7 +73,6 @@ if uploaded_file:
     
     @st.cache_resource
     def init_stable_rag(path, filename):
-        # Unique directory to avoid WinError 32
         unique_persist_dir = os.path.join(CHROMA_BASE, filename.replace(".pdf", "").replace(" ", "_"))
         
         docs = load_documents(path)

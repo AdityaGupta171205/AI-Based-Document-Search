@@ -112,10 +112,10 @@ if prompt := st.chat_input("Query the knowledge base..."):
 
                 source_name = os.path.basename(doc.metadata.get('source', 'Document'))
                 raw_page = doc.metadata.get('page', None)
-                page_display = int(raw_page) + 1 if isinstance(raw_page, int) else "N/A"
+                page_display = int(raw_page) + 1 if isinstance(raw_page, int) else "N/A"      
                 st.markdown(f"**Verified Source:** {source_name} | **Page:** {page_display}")
                 
-                with st.expander("Show Sources:"):
+                with st.expander("Show Chunks:"):
                     st.caption(doc.page_content)
 
     st.session_state.messages.append({"role": "assistant", "content": result["answer"]})

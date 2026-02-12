@@ -109,7 +109,12 @@ if prompt := st.chat_input("Query the knowledge base..."):
             if result["sources"]:
                 st.markdown("---")
                 doc = result["sources"][0]
-                st.markdown(f"**Verified Source:** {os.path.basename(doc.metadata.get('source', 'PDF'))}")
+
+                source_name = os.path.basename(doc.metadata.get('source', 'Document'))
+                raw_page = doc.metadata.get('page', None)
+                page_display = int(raw_page) + 1 if isinstance(raw_page, int) else "N/A"
+                st.markdown(f"**Verified Source:** {source_name} | **Page:** {page_display}")
+                
                 with st.expander("Show Sources:"):
                     st.caption(doc.page_content)
 

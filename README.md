@@ -33,7 +33,7 @@ It functions as a research assistant, study companion, and document analysis too
 - Shows filename and page number.
 - Minimal, research-style citation format.
 
-### 🛠️ AI Study Tools
+### 🛠️ AI Tools
 From the sidebar, users can:
 - 📄 Generate Document Summary
 - 📝 Generate Study Notes
